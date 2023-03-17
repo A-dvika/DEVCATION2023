@@ -18,26 +18,25 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="FRUITS VEGGIES" placeholder="FRUITS_VEGGIES" required="required" />
-        <input type="text" name="SUPPORTING OTHERS" placeholder="SUPPORTING_OTHERS" required="required" />
-	<input type="text" name="PLACES VISITED" placeholder="PLACES_VISITED" required="required" />
-	<input type="text" name="CORE CIRCLE" placeholder="CORE_CIRCLE" required="required" />
-	<input type="text" name="SOCIAL NETWORK" placeholder="SOCIAL_NETWORKD" required="required" />
-	<input type="text" name="ACHIEVEMENT" placeholder="ACHIEVEMENT" required="required" />
-	<input type="text" name="DONATION" placeholder="DONATION" required="required" />
-	<input type="text" name="BMI RANGE" placeholder="BMI_RANGE" required="required" />
-	<input type="text" name="TODO COMPLETED" placeholder="TODO_COMPLETED" required="required" />
-	<input type="text" name="FLOW" placeholder="FLOW" required="required" />
-	<input type="text" name="DAILY STEPS" placeholder="DAILY_STEPS" required="required" />
-	<input type="text" name="LIVE VISION" placeholder="LIVE_VISION" required="required" />
-	<input type="text" name="SLEEP HOURS" placeholder="SLEEP_HOURS" required="required" />
-	<input type="text" name="LOST VACATION" placeholder="LOST_VACATION" required="required" />
-	<input type="text" name="DAILY SHOUTING" placeholder="DAILY_SHOUTING" required="required" />
-	<input type="text" name="SUFFICIENT INCREASE:" placeholder="SUFFICIENT_INCREASE:" required="required" />
-	<input type="text" name="TIME FOR PASSION" placeholder="TIME_FOR_PASSION" required="required" />
-	<input type="text" name="WEEKLY MEDITATION" placeholder="WEEKLY_MEDITATION" required="required" />
-	<input type="text" name="AGE" placeholder="AGE" required="required" />
-	<input type="text" name="GENDER" placeholder="GENDER" required="required" />
+    	<input type="text" name="FRUITS VEGGIES" placeholder="How many fruits or vegetable do you eat everyday?" required="required" />
+        <input type="text" name="SUPPORTING OTHERS" placeholder="How many people do you help achieve a better life?" required="required" />
+	<input type="text" name="PLACES VISITED" placeholder="How many new places do you visit?" required="required" />
+	<input type="text" name="CORE CIRCLE" placeholder="How many people are very close to you?" required="required" />
+	<input type="text" name="SOCIAL NETWORK" placeholder="With how many people do you interact with during a typical day?" required="required" />
+	<input type="text" name="ACHIEVEMENT" placeholder="How many remarkable achievements are you proud of?" required="required" />
+	<input type="text" name="DONATION" placeholder="How many times do you donate your time or money to good causes?" required="required" />
+	<input type="text" name="BMI RANGE" placeholder="What is your body mass index (BMI) range?" required="required" />
+	<input type="text" name="TODO COMPLETED" placeholder="How well do you complete your weekly to-do lists?" required="required" />
+	<input type="text" name="FLOW" placeholder="In a typical day, how many hours do you experience "FLOW"?" required="required" />
+	<input type="text" name="DAILY STEPS" placeholder="How many steps (in thousands) do you typically walk everyday?" required="required" />
+	<input type="text" name="LIVE VISION" placeholder="For how may years ahead is your life vision very clear for?" required="required" />
+	<input type="text" name="SLEEP HOURS" placeholder="About how long do you typically sleep?" required="required" />
+	<input type="text" name="LOST VACATION" placeholder="How many days of vacation do you typically lose every year?" required="required" />
+	<input type="text" name="DAILY SHOUTING" placeholder="How often do you shout or sulk at somebody?" required="required" />
+	<input type="text" name="SUFFICIENT INCREASE:" placeholder="How sufficient is your increase to cover basic life expenses?" required="required" />
+	<input type="text" name="TIME FOR PASSION" placeholder="How many hours do you spend everyday doing what you are passionate about?" required="required" />
+	<input type="text" name="WEEKLY MEDITATION" placeholder="In a typical week, how many times do you have the opportunity to think about yourself?" required="required" />
+	<input type="text" name="GENDER" placeholder="Male or Female" required="required" />
 	<input type="text" name="WORK LIFE BALANCE" placeholder="WORK_LIFE_BALANCE" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
