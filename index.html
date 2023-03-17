@@ -18,10 +18,63 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+    	<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
 
+<body>
+ <div class="login">
+	<h1>Stress Level Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+	    <input type="text" name="FRUITS VEGGIES" placeholder="FRUITS_VEGGIES" required="required" />
+        <input type="text" name="SUPPORTING OTHERS" placeholder="SUPPORTING_OTHERS" required="required" />
+		<input type="text" name="PLACES VISITED" placeholder="PLACES_VISITED" required="required" />
+	    <input type="text" name="CORE CIRCLE" placeholder="CORE_CIRCLE" required="required" />
+	    <input type="text" name="SOCIAL NETWORK" placeholder="SOCIAL_NETWORKD" required="required" />
+	    <input type="text" name="ACHIEVEMENT" placeholder="ACHIEVEMENT" required="required" />
+	    <input type="text" name="DONATION" placeholder="DONATION" required="required" />
+	    <input type="text" name="BMI RANGE" placeholder="BMI_RANGE" required="required" />
+	    <input type="text" name="TODO COMPLETED" placeholder="TODO_COMPLETED" required="required" />
+	    <input type="text" name="FLOW" placeholder="FLOW" required="required" />
+	    <input type="text" name="DAILY STEPS" placeholder="DAILY_STEPS" required="required" />
+	    <input type="text" name="LIVE VISION" placeholder="LIVE_VISION" required="required" />
+	    <input type="text" name="SLEEP HOURS" placeholder="SLEEP_HOURS" required="required" />
+	     <input type="text" name="LOST VACATION" placeholder="LOST_VACATION" required="required" />
+	     <input type="text" name="DAILY SHOUTING" placeholder="DAILY_SHOUTING" required="required" />
+	     <input type="text" name="SUFFICIENT INCREASE:" placeholder="SUFFICIENT_INCREASE:" required="required" />
+	     <input type="text" name="TIME FOR PASSION" placeholder="TIME_FOR_PASSION" required="required" />
+	     <input type="text" name="WEEKLY MEDITATION" placeholder="WEEKLY_MEDITATION" required="required" />
+	     <input type="text" name="AGE" placeholder="AGE" required="required" />
+	     <input type="text" name="GENDER" placeholder="GENDER" required="required" />
+	     <input type="text" name="WORK LIFE BALANCE" placeholder="WORK_LIFE_BALANCE" required="required" />
+	     
+	    v
+    	
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
