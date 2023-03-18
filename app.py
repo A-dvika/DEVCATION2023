@@ -3,26 +3,27 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
 @app.route('/')
 def home():
     return render_template('index.html')
-    <form method="POST" action="{{ url_for('step2') }}">
-  <h2>Step 1 of 3</h2>
-  <label for="How many fruits or vegetable do you eat everyday?">FRUITS_VEGGIES</label>
-  <select id="feature1" name="feature1">
-    <option value="0">Option 1</option>
-    <option value="1">Option 2</option>
-    <option value="2">Option 3</option>
-    <option value="3">Option 4</option>
-    <option value="4">Option 5</option>
-    <option value="5">Option 6</option>
-  </select>
-  <!-- Repeat the above code for the remaining features -->
-  
-  <input type="submit" value="Next">
-</form>
+    
+@app.route('/scroll', methods=['POST'])
+def scroll():
+    print("Scroll endpoint called")
+    direction = request.form['direction']
+    if direction == 'down':
+        script = 'window.scrollBy(0, 100);'
+    elif direction == 'up':
+        script = 'window.scrollBy(0, -100);'
+    else:
+        return jsonify({'error': 'Invalid direction'})
+
+    return jsonify({'success': True})
+
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
@@ -39,7 +40,7 @@ def predict():
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
     '''
-    For direct API calls trought request
+    For direct API calls through request
     '''
     data = request.get_json(force=True)
     prediction = model.predict([np.array(list(data.values()))])
