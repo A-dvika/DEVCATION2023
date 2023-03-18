@@ -8,7 +8,21 @@ model = pickle.load(open('model.pkl', 'rb'))
 @app.route('/')
 def home():
     return render_template('index.html')
-
+    <form method="POST" action="{{ url_for('step2') }}">
+  <h2>Step 1 of 3</h2>
+  <label for="How many fruits or vegetable do you eat everyday?">FRUITS_VEGGIES</label>
+  <select id="feature1" name="feature1">
+    <option value="0">Option 1</option>
+    <option value="1">Option 2</option>
+    <option value="2">Option 3</option>
+    <option value="3">Option 4</option>
+    <option value="4">Option 5</option>
+    <option value="5">Option 6</option>
+  </select>
+  <!-- Repeat the above code for the remaining features -->
+  
+  <input type="submit" value="Next">
+</form>
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
