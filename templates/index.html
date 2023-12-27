@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nirodhah</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h3 class="logo">Nirodhah</h3>
+                <div class="menu">
+                    <a href="#main" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="/predict-form">Predict</a>
+                </div>
+            </div>
+        </nav>
+
+        <h1 id="main_text" class="big-title">TRANSFORM STRESS INTO SERENITY WITH NIRODHAH (निरोधः)</h1>
+
+        <img src="static/images/hill1.png" id="main_hill1">
+        <img src="static/images/hill2.png" id="main_hill2">
+        <img src="static/images/hill3.png" id="main_hill3">
+        <img src="static/images/hill4.png" id="main_hill4">
+        <img src="static/images/hill5.png" id="main_hill5">
+        <img src="static/images/tree.png" id="main_tree">
+        <img src="static/images/leaf.png" id="main_leaf">
+        <img src="static/images/plant.png" id="main_plant">
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="content">
+                <h3 class="title">What is Nirodhah?
+                    <div class="border"></div>
+                </h3>
+                <h3 class="subtitle">ML POWERED STRESS LEVEL PREDICTOR</h3>
+                <p class="text">We invite you to take our stress prediction questionnaire and get insights into your stress level for the day. Our questionnaire is powered by a cutting-edge machine learning model that analyzes various factors to predict your stress level accurately. By taking the questionnaire, you can gain a better understanding of your stress triggers and learn how to manage them effectively. The questionnaire is quick, easy, and completely confidential. So why wait? Take the questionnaire now and take the first step towards a stress-free life!</p>
+            </div>
+            <div class="imgContainer">
+                <img src="static/images/hill1.png" class="about_hill1">
+                <img src="static/images/hill2.png" class="about_hill2">
+                <img src="static/images/hill3.png" class="about_hill3">
+                <img src="static/images/hill4.png" class="about_hill4">
+                <img src="static/images/hill5.png" class="about_hill5">
+            </div>
+        </div>
+        <div class="bird-container bird-container-one">
+            <div class="bird bird-one"></div>
+        </div>
+        <div class="bird-container bird-container-two">
+            <div class="bird bird-two"></div>
+        </div>
+        <div class="bird-container bird-container-three">
+            <div class="bird bird-three"></div>
+        </div>
+        <div class="bird-container bird-container-four">
+            <div class="bird bird-four"></div>
+        </div>
+
+    </section>
+    <script src="static/js/script.js"></script>
+    <script>
+        // Smooth scroll to the target section
+        document.addEventListener('DOMContentLoaded', function () {
+            const aboutLink = document.querySelector('a[href="#about"]');
+    
+            aboutLink.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetSection = document.getElementById('about');
+                const offsetTop = targetSection.offsetTop;
+    
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

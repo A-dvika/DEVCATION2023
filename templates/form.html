@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirodhah- Form</title>
+    <link rel="stylesheet" href="static/css/style-form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h3 class="logo">Nirodhah</h3>
+                <div class="menu">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="form.html" class="active">Predict</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bird-container bird-container-one">
+        <div class="bird bird-one"></div>
+    </div>
+    <div class="bird-container bird-container-two">
+        <div class="bird bird-two"></div>
+    </div>
+    <div class="bird-container bird-container-three">
+        <div class="bird bird-three"></div>
+    </div>
+    <div class="bird-container bird-container-four">
+        <div class="bird bird-four"></div>
+    </div>
+
+    <section>
+    <div class="container-form">
+        <div class="text">Welcome to our stress level predictor tool! By answering a few simple questions, our machine learning algorithm will predict your stress level for the day. The questions are designed to help us understand your stressors and provide you with personalized recommendations for managing your stress. Your privacy is important to us, and all of your information will be kept confidential. Thank you for using our stress level predictor tool, and we hope it helps you manage your stress more effectively.</div>
+        <form action="/predict" method="post">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="FRUITS_VEGGIES" required>
+                    <label>How many fruits or vegetable do you eat everyday? (0 to 5)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="PLACES_VISITED" required>
+                    <label>How many new places do you visit? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="CORE_CIRCLE" required>
+                    <label>How many people are very close to you? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="SUPPORTING_OTHERS" required>
+                    <label>How many people do you help achieve a better life? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="SOCIAL_NETWORK" required>
+                    <label>How many people do you interact with during a typical day? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="ACHIEVEMENT" required>
+                    <label>How many remarkable achievements are you proud of? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="DONATION" required>
+                    <label>How many times do you donate your time or money to good causes? (0 to 5)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="BMI_RANGE" required>
+                    <label>1 if BMI normal, 2 otherwise</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="TODO_COMPLETED" required>
+                    <label>How well do you complete your weekly to-do lists? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="FLOW" required>
+                    <label>In a typical day, how many hours do you experience FLOW? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="DAILY_STEPS" required>
+                    <label>How many steps (in thousands) do you typically walk everyday? (0 to 10)</label>
+                </div>
+                <div class="input-data" >
+                    <input type="text" name="LIVE_VISION" required>
+                    <label>For how may years ahead is your life vision very clear for? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="SLEEP_HOURS" required>
+                    <label>About how long do you typically sleep? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="LOST_VACATION" required>
+                    <label>How many days of vacation do you typically lose every year? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="DAILY_SHOUTING" required>
+                    <label>How often do you shout or sulk at somebody? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="SUFFICIENT_INCREASE" required>
+                    <label>Is your increase sufficient to cover basic life expenses?(1 if yes, 2 if no)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="PERSONAL_AWARDS" required>
+                    <label>How many recognitions have you received in your life? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="TIME_FOR_PASSION" required>
+                    <label>How many hours do you spend everyday doing what you are passionate about? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="WEEKLY_MEDITATION" required>
+                    <label>In a typical week, how many times do you have the opportunity to think about yourself? (0 to 10)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="GENDER" required>
+                    <label>Male(1) or Female(2)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="WORK_LIFE_BALANCE_SCORE" required>
+                    <label>Work life balance score</label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Predict Your Daily Stress Level">
+            </div>
+        </form>
+    </div>
+    </section>
+    <br>
+    <br>
+    {{ prediction_text }}
+</body>
+</html>

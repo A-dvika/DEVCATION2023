@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirodhah- Form</title>
+    <link rel="stylesheet" href="static/css/style-prediction.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #low{
+          font-size: 130px;
+          color: #359381;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          margin-top: 90px;
+          display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-prediction">
+        <div>
+          <i class="material-icons" id="low">sentiment_very_satisfied</i>
+        </div>
+        <div id="prediction-text-low">
+          {{ prediction_text }}
+        </div>
+    
+      </div>
+</body>
+</html>
