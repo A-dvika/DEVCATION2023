@@ -6,7 +6,7 @@
 
 In the realm of mental health, understanding stress levels is crucial for fostering well-being. Nirodhah steps in as an AI-driven solution, predicting stress levels for individuals without a history of stress assessments. Leveraging logistic regression, the model achieves an impressive accuracy of 92.76%.
 
-#### [Check out Nirodhah](url)
+#### [Check out Nirodhah](https://nirodhah.onrender.com)
 
 ## PROJECT DESCRIPTION
 
