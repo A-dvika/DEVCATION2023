@@ -33,5 +33,5 @@ Transitioning from development to deployment, we selected Render as our hosting 
 
 ## TEAM DETAILS: 
 
-- Ayushi Dubey ([Email Id](adayushi232@gmail.com), [GitHub Profile Link](github.com/dubeyayushi))
-- Advika Thakur ([Email Id](adici2403@gmail.com), [GitHub Profile Link](github.com/A-dvika))
+- Ayushi Dubey ([Email Id](mailto:adayushi232@gmail.com), [GitHub Profile Link](https://github.com/dubeyayushi))
+- Advika Thakur ([Email Id](mailto:adici2403@gmail.com), [GitHub Profile Link](https://github.com/A-dvika))
